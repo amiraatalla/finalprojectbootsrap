@@ -1,0 +1,183 @@
+/* all */
+
+body {
+  width: 99%;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* end all  */
+
+/* start section1 */
+
+.imgtran {
+  height: 600px;
+  /* background-image: url("../images/dress.jpg"); */
+  transform: translate(0, 0);
+  transition: transform 2s;
+}
+
+.imgtran:hover {
+  transform: translate(10px, 10px);
+  /* (150% zoom)*/
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.right {
+  position: absolute;
+  top: 55%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.rightone {
+  position: absolute;
+  width: 58%;
+  margin-top: -19%;
+  margin-left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+#section3 h4 {
+  margin: 4px 0 16px 0px;
+}
+
+.left {
+  position: absolute;
+  top: 55%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 41%;
+  transform: translate(-50%, -50%);
+}
+
+#atext {
+  color: #FFF;
+  text-decoration: underline #FFF;
+}
+
+#atext:hover {
+  color: #000;
+  text-decoration: #000;
+}
+#section1 h1{
+  font-size: 28px;
+}
+
+/* end section1 */
+
+/* start section 2 */
+
+#section2 .parahraph {
+  margin-bottom: 2px;
+}
+
+#section2 .card{
+  margin-bottom: 59px;
+  padding-bottom: 59px;
+}
+ #section2 .addcart{
+  width: 100%;
+  height: 39px;
+  text-align: center;
+  font-size: larger;
+  padding-top: 4px;
+  background-color: #fff;
+  color: #FFF;
+ 
+
+}
+
+#section2 .addcart:hover{
+  width: 100%;
+  height: 39px;
+  text-align: center;
+  font-size: larger;
+  margin-top: -29px;
+  padding-top: 4px;
+  background-color: #000;
+  color: #FFF;
+  ;
+} 
+
+
+#section2 .card img {
+  height: 70%;
+}
+
+
+
+#section2 span {
+  display: block !important;
+  font-size: small;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* end section 2 */
+
+/* start section 3 */
+
+#linkme {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  padding: 9px 20px 9px 20px;
+}
+
+#linkme:hover {
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #000;
+  width: 25px;
+  height: 25px;
+  padding: 9px 20px 9px 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/*end section3  */
+
+
+/* start section 5 */
+
+#section5{
+  padding: 25px 0 25px 0;
+}
+
+#section5 h1{
+  font-family: cursive;
+}
+#section5 h1:hover{
+  font-family: cursive;
+  color: #ccc;
+}
+/* end section 5 */

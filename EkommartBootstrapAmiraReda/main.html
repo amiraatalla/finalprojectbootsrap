@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Css/font-awesome.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Css/main.css'>
+
+    <script src='Js/jquery.js'></script>
+    <script src='Js/bootstrap.bundle.js'></script>
+    <script src='JS/main.js'></script>
+
+</head>
+
+<body>
+
+    <!-- Start header -->
+
+    <!-- upper //div with 2 col -->
+    <div class="container-fluid p-4">
+        <div class="row">
+            <div class="col-sm-8 col-md-8 col-lg-8 d-flex justify-content-center">
+                <a href="#">
+                    <h1 style="font-weight: bold;">ekommart</h1>
+                </a>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 d-flex justify-content-center mt-3">
+                <i class="fa fa-search  fa-2x" aria-hidden="true" style="font-weight: 50px; padding-right:13px ;"></i>
+
+                <li class="nav-item dropdown" style="margin-top: -5px; margin-right: -10px;">
+                    <a href="#" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                        <i id="form" class="fa fa-user-circle  fa-2x" aria-hidden="true"
+                            style="font-weight: 50px; padding-right:13px ;"></i>
+
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <form class="ekommart-login-form-ajax" data-toggle="validator" style="padding: 10px;">
+                            <p>
+                                <label>Username or email <span class="required">*</span></label>
+                                <input name="username" type="text" required="" placeholder="Username">
+                            </p>
+                            <p>
+                                <label>Password <span class="required">*</span></label>
+                                <input name="password" type="password" required="" placeholder="Password">
+                            </p>
+                            <button type="submit" data-button-action=""
+                                class="btn btn-primary btn-block w-100 mt-1">Login</button>
+                            <input type="hidden" name="action" value="ekommart_login">
+                            <input type="hidden" id="security-login" name="security-login" value="9bf41afcf2"><input
+                                type="hidden" name="_wp_http_referer" value="/ekommart/home-16/">
+                        </form>
+                        <!-- <a href="#" class="dropdown-item" href="#">Action</a>
+                        <a href="#" class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item" href="#">Something else here</a> -->
+                    </div>
+                </li>
+
+                <i class="fa fa-heart-o  fa-2x" aria-hidden="true" style="font-weight: 50px; padding-right:13px ;"></i>
+                <i class="fa fa-shopping-basket fa-2x" aria-hidden="true"
+                    style="font-weight: 50px; padding-right:13px ;"></i>
+                <i class="fa fa-usd fa-2x" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- nav -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light pb-3">
+                    <!-- <a href="#" class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Home
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item" href="#">Action</a>
+                                    <a href="#" class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link " href="#">About</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Shop
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item" href="#">Action</a>
+                                    <a href="#" class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Blog
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item" href="#">Action</a>
+                                    <a href="#" class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item" href="#">Action</a>
+                                    <a href="#" class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link " href="#">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- slider -->
+    <div class="container-fluid" style="padding: 0;">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/flw.jpg" class="d-block w-100 imgtran" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/bags.jpg" class="d-block w-100 imgtran" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- start section 1 -->
+    <section id="section1">
+        <div class="container-fluid mt-4 mb-4">
+            <div class="row">
+                <div class="col-sm-12 col-md-4" style="padding: 0; margin: 0;" >
+                    <img src="images/dress.jpg" class="imgtran" alt="" style="height: 100%; width: 100%;">
+                    <div class="centered">
+                        <h1 style="color: #fff;">JANE MULE SHOES</h1>
+                        <a href="#" id="atext">View Collection</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 mb-5">
+                            <img src="images/watches.jpg" class="imgtran" alt="" style="width: 100%; height: 120%;">
+                            <div class="right">
+                                <h1 style="color: #000;">JANE MULE SHOES</h1>
+                                <a href="#" style="color: #000;text-decoration:underline #000 ;">View
+                                    Collection</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-sm-12 col-md-12">
+                            <img src="images/sho.jpg" alt="" class="imgtran" style="width: 100%; height: 135%;">
+                            <div class="left">
+                                <h1 style="color: #fff;">JANE MULE SHOES</h1>
+                                <a href="#" id="atext">View
+                                    Collection</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4" style="padding: 0; margin: 0;">
+                    <img src="images/basicdress.jpg" class="imgtran" alt="" style="height: 100%; width: 100%;">
+                    <div class="centered">
+                        <h1 style="color: #000;">JANE MULE SHOES</h1>
+                        <a href="#" style="color: #000;text-decoration:underline #000 ;" class="atext">View
+                            Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section 1 -->
+
+    <!-- start section 2 -->
+    <section id="section2">
+        <div class="container-fluid mb-5">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-12 ">
+                    <div class="row mt-5 mb-4">
+                        <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center">
+
+                            <h1 class="d-flex justify-content-center">
+                                <span>All Styles in This Spring</span>
+                                FEATURED PRODUCTS
+                            </h1>
+                        </div>
+                    </div>
+
+
+                    <div class="row row-cols-1 row-cols-md-3">
+                        <div class="col-sm-3 col-md-3">
+                            <div class="card h-100">
+                                <img src="images/tshirt.jpg" class="card-img-top" alt="...">
+                                <div class="addcart">
+                                    <p>Add To Cart</p>
+                                </div>
+                                <div class="mt-2 d-flex justify-content-center">
+                                    <span>Clothes</span>
+
+                                </div>
+                                <div class="mt-2 d-flex justify-content-center">
+                                    <p>White Jump Suite.</p>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <p>$109.93</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 col-md-3">
+                            <div class="card h-100">
+                                <img src="images/pants.jpg" class="card-img-top" alt="...">
+
+                                <div class="addcart">
+                                    <p>Add To Cart</p>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-center">
+                                    <span>Clothes</span>
+                                </div>
+                                <div class="mt-2 d-flex justify-content-center">
+                                    <p>White Jump Suite.</p>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <p>$109.93</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-3">
+                            <div class="card h-100">
+                                <img src="images/porto.jpg" class="card-img-top" alt="...">
+                                <div class="addcart">
+                                    <p>Add To Cart</p>
+                                </div>
+                                <div class="mt-2 d-flex justify-content-center">
+                                    <span>Clothes</span>
+                                </div>
+                                <div class="mt-2 d-flex justify-content-center">
+                                    <p>White Jump Suite.</p>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <p>$109.93</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-3">
+                            <div class="card h-100">
+                                <img src="images/shirt.jpg" class="card-img-top" alt="...">
+                                <div class="addcart">
+                                    <p>Add To Cart</p>
+                                </div>
+                                <div class="mt-2 d-flex justify-content-center">
+                                    <span>Clothes</span>
+                                </div>
+                                <div class="mt-2 d-flex justify-content-center">
+                                    <p>White Jump Suite.</p>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <p>$109.93</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section 2 -->
+
+    <!-- start section 3 -->
+    <section id="section3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 0; margin: 0;">
+                    <img src="images/girl.jpg" alt="" width="100%">
+                    <div class="rightone">
+                        TREND & FASHION GUIDE
+                        <h4>THE MOST STYLISH</h4>
+                        <span id="btnme"><a href="#" id="linkme">View Collection</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section 3 -->
+
+    <!-- start section 4 -->
+    <div class="container-fluid">
+        <div class="row mt-5 mb-5">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 39px; margin-right: 0px;">
+                        <img src="images/blackdress.jpg" class="imgtran" alt="">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+
+                        <div class="row mb-1">
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <img src="images/tshirt.jpg" alt="" width="110%" height="100%">
+                            </div>
+                            <div class="col-sm-8 col-md-8 col-lg-8 mt-3">
+                                <p>White Jump Suite</p>
+                                <p>$109.93</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row mb-1">
+                            <div class="col-sm-4 col-md-4">
+                                <img src="images/pants.jpg" alt="" width="110%" height="100%">
+                            </div>
+                            <div class="col-sm-8 col-md-8 mt-3">
+                                <p>White Jump Suite</p>
+                                <p>$109.93</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row mb-1">
+                            <div class="col-sm-4 col-md-4 ">
+                                <img src="images/porto.jpg" alt="" width="110%" height="100%">
+                            </div>
+                            <div class="col-sm-8 col-md-8 mt-3">
+                                <p>White Jump Suite</p>
+                                <p>$109.93</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row mb-1">
+                            <div class="col-sm-4 col-md-4">
+                                <img src="images/shirt.jpg" alt="" width="110%" height="100%">
+                            </div>
+                            <div class="col-sm-8 col-md-8 mt-3">
+                                <p>White Jump Suite</p>
+                                <p>$109.93</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 39px; margin-right: 0px;">
+                        <img src="images/whiteshirt.jpg" class="imgtran" alt="">
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="row mb-1">
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <img src="images/brownbag.jpg" alt="" width="110%" height="100%">
+                            </div>
+                            <div class="col-sm-8 col-md-8 col-lg-8 mt-3">
+                                <p>White Jump Suite</p>
+                                <p>$109.93</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row mb-1">
+                            <div class="col-sm-4 col-md-4">
+                                <img src="images/blackshoes.jpg" alt="" width="110%" height="100%">
+                            </div>
+                            <div class="col-sm-8 col-md-8 mt-3">
+                                <p>White Jump Suite</p>
+                                <p>$109.93</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row mb-1">
+                            <div class="col-sm-4 col-md-4 ">
+                                <img src="images/whitebag.jpg" alt="" width="110%" height="100%">
+                            </div>
+                            <div class="col-sm-8 col-md-8 mt-3">
+                                <p>White Jump Suite</p>
+                                <p>$109.93</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row mb-1">
+                            <div class="col-sm-4 col-md-4">
+                                <img src="images/shirt.jpg" alt="" width="110%" height="100%">
+                            </div>
+                            <div class="col-sm-8 col-md-8 mt-3">
+                                <p>White Jump Suite</p>
+                                <p>$109.93</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section 4 -->
+    <hr>
+
+    <!-- start section 5 -->
+    <section id="section5">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center">
+                    <a href="#"><h1>CHAVY</h1></a>
+                    <!-- <img src="images/chavybrand.png" alt="" width="80%" height="80%"> -->
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center">
+                    <a href="#"><h1>POWERHOUSE</h1></a>
+                    <!-- <img src="images/powerhousebrand.png" alt="" width="80%" height="80%"> -->
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center">
+                    <a href="#"><h1>HARDCORE</h1></a>
+                    <!-- <img src="images/hardcodebrand.png" alt="" width="80%" height="80%"> -->
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center">
+                    <a href="#"><h1>FITNESS</h1></a>
+                    <!-- <img src="images/fitnessbrand.png" alt="" width="80%" height="80%"> -->
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center">
+                    <a href="#"><h1>Fishing</h1></a>
+                    <!-- <img src="images/fishingbrand.png" alt="" width="80%" height="80%"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section 5 -->
+    <hr>
+    <!-- start section 6 -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-0 col-md-4 col-lg-4">
+                <i class="fa fa-rocket fa-4x  d-flex justify-content-center" aria-hidden="true"></i>
+                <p class="d-flex justify-content-center">FREE DELIVERY</p>
+                <p class="d-flex justify-content-center">When ordering from $500.</p>
+            </div>
+            <div class="col-sm-0 col-md-4 col-lg-4">
+                <i class="fa fa-home fa-4x  d-flex justify-content-center" aria-hidden="true"></i>
+                <p class="d-flex justify-content-center">FREE DELIVERY</p>
+                <p class="d-flex justify-content-center">When ordering from $500.</p>
+            </div>
+            <div class="col-sm-0 col-md-4 col-lg-4">
+                <i class="fa fa-credit-card fa-4x  d-flex justify-content-center" aria-hidden="true"></i>
+                <p class="d-flex justify-content-center">FREE DELIVERY</p>
+                <p class="d-flex justify-content-center">When ordering from $500.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end section 6 -->
+
+
+    <!-- start section 7 -->
+
+    <div class="container-fluid" style="padding: 0;">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 mt-5 mb-5">
+                        <p class="d-flex justify-content-center mb-n2">Inspired By You!</p>
+                        <h1 class="d-flex justify-content-center">GALLERY</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-2 mb-5">
+                        <img src="images/bagcolors.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2 mb-5">
+                        <img src="images/stylishgirl.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2 mb-5">
+                        <img src="images/flower.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2 mb-5">
+                        <img src="images/fashionbag.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2 mb-5">
+                        <img src="images/fashoinshoes.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2 mb-5">
+                        <img src="images/fashiondresses.jpg" alt="" height="100%" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end section 7 -->
+
+    <!-- start section 8 -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 mt-5 mb-5">
+                        <p class="d-flex justify-content-center mb-n2">Sign Up For</p>
+                        <h1 class="d-flex justify-content-center">NEWSLETTER</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section 8 -->
+    <hr>
+    <!-- start section 9 -->
+    <div class="container-fluid mb-5 mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-12 col-md-2 col-lg-2">
+                <h4 class="ml-4">PRODUCTS</h4>
+                <ul>
+                    <li><a href="#"><span>Cameras</span></a></li>
+                    <li><a href="#"><span></span>Video Cameras</span></a></li>
+                    <li><a href="#"><span>Lenses</span></a></li>
+                    <li><a href="#"><span>Ink, Toner&Paper</span></a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-2 col-lg-2">
+                <h4 class="ml-4">PRODUCTS</h4>
+                <ul>
+                    <li><a href="#"><span>Cameras</span></a></li>
+                    <li><a href="#"><span></span>Video Cameras</span></a></li>
+                    <li><a href="#"><span>Lenses</span></a></li>
+                    <li><a href="#"><span>Ink, Toner&Paper</span></a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-2 col-lg-2">
+                <h4 class="ml-4">PRODUCTS</h4>
+                <ul>
+                    <li><a href="#"><span>Cameras</span></a></li>
+                    <li><a href="#"><span></span>Video Cameras</span></a></li>
+                    <li><a href="#"><span>Lenses</span></a></li>
+                    <li><a href="#"><span>Ink, Toner&Paper</span></a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-2 col-lg-2">
+                <h4 class="ml-4">PRODUCTS</h4>
+                <ul>
+                    <li><a href="#"><span>Cameras</span></a></li>
+                    <li><a href="#"><span></span>Video Cameras</span></a></li>
+                    <li><a href="#"><span>Lenses</span></a></li>
+                    <li><a href="#"><span>Ink, Toner&Paper</span></a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="row">
+                    <p style="color: rgb(161, 150, 150); font-size: 13px;">
+                        All-in-one WooCommerce WordPress Theme is a specific,ultimate theme.
+                    </p>
+                </div>
+
+                <div class="row">
+                    <span style="font-weight: bold;">Address:</span>
+                    <span style="color: rgb(161, 150, 150); font-size: 15px; padding: 5px 0 0 5px">947 Clare
+                        Point, Western Sahara</span>
+                </div>
+                <div class="row">
+                    <span style="font-weight: bold;">Support:</span>
+                    <span style="color: rgb(161, 150, 150); font-size: 13px; padding: 5px 0 0 5px"> (01) 00 230
+                        6789</span>
+                </div>
+                <div class="row mt-2">
+                    <span style="font-weight: bold;">Email:</span>
+                    <a href="#" href="#"><span>info@example.com</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section 9 -->
+    <!-- start footer -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="my-3 px-5 col-sm-6 col-md-6">
+                <p style="color: grey;">Copyright Copyright 2020 <span
+                        style="color: black; font-weight: bold;">ekommart</span>. All Rights Reserved.</p>
+            </div>
+            <div class="my-3 px-5 col-sm-6 col-md-6 d-flex justify-content-end">
+                <img src="images/visa.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+
+
+
+</body>
+
+</html>
