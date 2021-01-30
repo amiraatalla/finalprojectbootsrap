@@ -46,12 +46,11 @@ a:hover {
   margin-left: -6px;
   height: 518px;
   /* background-image: url("../images/dress.jpg"); */
-  transform: translate(0, 0);
-  transition: transform 2s;
+
 }
 
 .imgtran:hover {
-  transform: translate(10px, 10px);
+
   /* (150% zoom)*/
 }
 
